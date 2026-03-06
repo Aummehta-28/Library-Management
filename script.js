@@ -29,12 +29,12 @@ function generateId() {
 }
 
 
-let createId = generateId();
+
 
 function addBook(book) {
     let newBook = {
         ...book,
-        id: createId(),
+        id: generateId()(),
     }
     books.push(newBook);
     console.log(books);
